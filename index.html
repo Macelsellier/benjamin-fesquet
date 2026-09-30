@@ -3,55 +3,169 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Benjamin Fesquet – Saddle Fitter</title>
-<meta name="description" content="Benjamin Fesquet – Saddle Fitter, MACEL SELLIER">
+<title>Benjamin Fesquet — Saddle Fitter | MACEL</title>
+<meta name="description" content="Benjamin Fesquet — Saddle Fitter, MACEL SELLIER">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root { --navy:#0d204a; --gold:#ffb60f; --cream:#f8f6f1; --grey:#4a4f6a; }
-* { box-sizing:border-box; }
-body {
-  margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
-  padding:28px 18px; background:var(--cream); color:var(--navy);
-  font-family:Arial,sans-serif;
+:root{
+  --navy:#0d204a;
+  --navy2:#162f6b;
+  --gold:#ffb60f;
+  --cream:#f8f6f1;
+  --warm:#eae5dc;
+  --mid:#4a4f6a;
 }
-.card {
-  width:100%; max-width:430px; background:white; padding:34px 28px;
-  text-align:center; border-top:5px solid var(--gold);
-  box-shadow:0 12px 35px rgba(13,32,74,.10);
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--navy)}
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:22px;
+  color:var(--navy);
+  font-family:Montserrat,Arial,sans-serif;
 }
-.logo {
-  display:block; width:290px; max-width:90%; height:auto;
-  margin:0 auto 28px;
+.page{
+  width:100%;
+  max-width:460px;
+  background:var(--cream);
+  position:relative;
+  overflow:hidden;
 }
-h1 { font-family:Georgia,serif; font-size:35px; font-weight:400; margin:0 0 8px; }
-.role { font-size:15px; letter-spacing:2px; text-transform:uppercase; color:var(--grey); }
-.details { margin:30px 0 26px; line-height:1.9; font-size:15px; }
-.details a { color:var(--navy); text-decoration:none; }
-.buttons { display:grid; gap:11px; }
-.button {
-  display:block; padding:14px 18px; border:1px solid var(--navy);
-  text-decoration:none; color:var(--navy); font-weight:700; letter-spacing:.4px;
+.page:before{
+  content:"";
+  position:absolute;
+  left:22px;right:22px;top:22px;height:1px;
+  background:var(--gold);
 }
-.button.primary { background:var(--navy); color:white; }
-.footer { margin-top:28px; font-size:12px; color:var(--grey); }
+.inner{
+  padding:54px 30px 32px;
+  text-align:center;
+}
+.logo{
+  display:block;
+  width:270px;
+  max-width:88%;
+  height:auto;
+  margin:0 auto 34px;
+}
+.eyebrow{
+  font-size:10px;
+  letter-spacing:3.2px;
+  text-transform:uppercase;
+  color:var(--mid);
+  margin-bottom:8px;
+}
+h1{
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:46px;
+  line-height:.95;
+  font-weight:500;
+  margin:0;
+  letter-spacing:.2px;
+}
+.gold-line{
+  width:42px;
+  height:1px;
+  background:var(--gold);
+  margin:19px auto 18px;
+}
+.role{
+  font-size:11px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--navy2);
+}
+.contact{
+  margin:30px auto 25px;
+  padding:18px 0;
+  border-top:1px solid var(--warm);
+  border-bottom:1px solid var(--warm);
+}
+.contact a{
+  display:block;
+  color:var(--navy);
+  text-decoration:none;
+  font-size:13px;
+  line-height:2.05;
+}
+.actions{
+  display:grid;
+  gap:10px;
+}
+.action{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:48px;
+  border:1px solid rgba(13,32,74,.38);
+  color:var(--navy);
+  text-decoration:none;
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  transition:.2s ease;
+}
+.action.primary{
+  background:var(--navy);
+  border-color:var(--navy);
+  color:#fff;
+}
+.action:hover{transform:translateY(-1px)}
+.site-link{
+  margin-top:20px;
+  font-size:11px;
+  letter-spacing:1.5px;
+  color:var(--navy);
+  text-decoration:none;
+  display:inline-block;
+  border-bottom:1px solid var(--gold);
+  padding-bottom:4px;
+}
+.footer{
+  margin-top:31px;
+  padding-top:17px;
+  border-top:1px solid var(--warm);
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:16px;
+  color:var(--mid);
+  letter-spacing:.5px;
+}
+@media(max-width:380px){
+  .inner{padding:48px 23px 27px}
+  h1{font-size:40px}
+  .logo{width:240px}
+}
 </style>
 </head>
 <body>
-<main class="card">
-  <img class="logo" src="macel-logo.png" alt="MACEL Sellier France depuis 1968">
-  <h1>Benjamin Fesquet</h1>
-  <div class="role">Saddle Fitter</div>
-  <div class="details">
-    <div><a href="tel:+33627270999">+33 6 27 27 09 99</a></div>
-    <div><a href="mailto:atelier@macel.fr">atelier@macel.fr</a></div>
-    <div><a href="https://macel-sellier.com" target="_blank" rel="noopener">macel-sellier.com</a></div>
+<main class="page">
+  <div class="inner">
+    <img class="logo" src="macel-logo.png" alt="MACEL — Sellier France depuis 1968">
+    <div class="eyebrow">Benjamin Fesquet</div>
+    <h1>Saddle Fitter</h1>
+    <div class="gold-line"></div>
+    <div class="role">MACEL SELLIER</div>
+
+    <div class="contact">
+      <a href="tel:+33627270999">+33 6 27 27 09 99</a>
+      <a href="mailto:atelier@macel.fr">atelier@macel.fr</a>
+    </div>
+
+    <div class="actions">
+      <a class="action primary" href="benjamin-fesquet.vcf" download>Ajouter aux contacts</a>
+      <a class="action" href="tel:+33627270999">Appeler Benjamin</a>
+      <a class="action" href="mailto:atelier@macel.fr">Envoyer un e-mail</a>
+    </div>
+
+    <a class="site-link" href="https://macel-sellier.com" target="_blank" rel="noopener">macel-sellier.com</a>
+
+    <div class="footer">L’expertise MACEL, au service de l’équilibre du couple cheval &amp; cavalier</div>
   </div>
-  <div class="buttons">
-    <a class="button primary" href="benjamin-fesquet.vcf" download>Ajouter aux contacts</a>
-    <a class="button" href="tel:+33627270999">Appeler Benjamin</a>
-    <a class="button" href="mailto:atelier@macel.fr">Envoyer un e-mail</a>
-    <a class="button" href="https://macel-sellier.com" target="_blank" rel="noopener">Visiter le site MACEL</a>
-  </div>
-  <div class="footer">Une nouvelle adresse web pourra être ajoutée ici plus tard, sans modifier le QR code.</div>
 </main>
 </body>
 </html>
