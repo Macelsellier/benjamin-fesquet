@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Benjamin Fesquet — Saddle Fitter | MACEL</title>
-<meta name="description" content="Benjamin Fesquet — Saddle Fitter, MACEL SELLIER">
+<title>Benjamin Fesquet — Saddle Motion Designer | MACEL</title>
+<meta name="description" content="Benjamin Fesquet — Saddle Motion Designer, MACEL SELLIER">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --navy:#0d204a;
-  --gold:#c49a52;
+  --gold:#CDAC4B;
   --cream:#f6f0e4;
   --cream-dark:#e9dfcf;
   --white:#faf8f3;
@@ -46,7 +46,7 @@ body{
     var(--navy);
   border:1px solid var(--gold);
   box-shadow:0 18px 45px rgba(13,32,74,.18);
-  padding:50px 34px 40px;
+  padding:46px 34px 36px;
 }
 .panel:after{
   content:"";
@@ -71,7 +71,7 @@ margin-bottom:10px;}
   letter-spacing:4px;
 }
 .divider{
-  width:62px; height:1px; margin:25px auto 28px;
+  width:62px; height:1px; margin:22px auto 24px;
   background:var(--gold);
   position:relative; z-index:1;
 }
@@ -81,7 +81,7 @@ margin-bottom:10px;}
   text-align:left;
 }
 .action{
-  min-height:76px;
+  min-height:62px;
   display:grid;
   grid-template-columns:44px 1fr 20px;
   align-items:center;
@@ -103,30 +103,33 @@ margin-bottom:10px;}
 }
 .website{
   position:relative; z-index:1;
-  display:inline-block; margin-top:25px;
+  display:inline-block; margin-top:18px;
   color:#eee7da; text-decoration:none;
   font:500 10px/1 Montserrat,Arial,sans-serif;
   letter-spacing:2px; text-transform:uppercase;
   padding-bottom:5px; border-bottom:1px solid var(--gold);
 }
 .slogan{
-  margin:30px 15px 0;
+  margin:22px 15px 0;
   color:var(--navy);
-  font:400 18px/1.35 "Cormorant Garamond",Georgia,serif;
+  font:400 17px/1.3 "Cormorant Garamond",Georgia,serif;
   letter-spacing:.35px;
 }
 .slogan:before{
   content:"";
   display:block; width:55px; height:1px;
-  background:var(--gold); margin:0 auto 17px;
+  background:var(--gold); margin:0 auto 13px;
 }
 @media(max-width:430px){
   body{padding:14px}
   .logo-wrap{padding-bottom:25px}
-  .panel{padding:38px 23px 30px}
+  .panel{padding:34px 23px 24px}
   .name{font-size:38px; white-space:nowrap}
-  .label{font-size:21px}
-  .action{min-height:69px}
+  .label{font-size:20px}
+  .action{min-height:54px}
+  .role{font-size:11px; letter-spacing:3px}
+  .divider{margin:18px auto 20px}
+  .slogan{margin-top:18px}
 }
 </style>
 </head>
@@ -138,7 +141,7 @@ margin-bottom:10px;}
 
   <section class="panel">
     <h1 class="name">Benjamin Fesquet</h1>
-    <div class="role">SADDLE FITTER</div>
+    <div class="role">SADDLE MOTION DESIGNER</div>
     <div class="divider"></div>
 
     <nav class="actions" aria-label="Coordonnées">
@@ -177,10 +180,19 @@ margin-bottom:10px;}
         </span>
         <span class="label">Visiter le site MACEL</span><span class="arrow">›</span>
       </a>
+
+      <a class="action" href="https://www.saddlemotiondesigner.com/" target="_blank" rel="noopener">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="27" height="27" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="16" cy="16" r="12"></circle><path d="M4 16h24M16 4c4 4 4 20 0 24M16 4c-4 4-4 20 0 24"></path>
+          </svg>
+        </span>
+        <span class="label">Visiter son site</span><span class="arrow">›</span>
+      </a>
     </nav>
   </section>
 
-  <p class="slogan">L’expertise MACEL, au service de l’équilibre du couple cheval &amp; cavalier</p>
+  <p class="slogan">Comprendre le mouvement. Créer l’équilibre.</p>
 </main>
 </body>
 </html>
